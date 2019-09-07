@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <title>Title</title>
+</head>
+<body >
+
+<div class="container">
+	<div class="row" style="margin-top: 10%;">
+        <div class="col-md-4">
+
+        </div>
+	 <div class="col-md-4 border">
+	    <form method="POST" >
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit" class="btn btn-primary">enter</button>
+
+        </form>
+	</div>
+    </div>
+</div>
+
+
+</body>
+</html>
